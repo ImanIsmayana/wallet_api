@@ -11,11 +11,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  post 'login', to: 'sessions#create'
-  delete 'logout', to: 'sessions#destroy'
+  post 'login', to: 'sessions#create' # Route for login
+  delete 'logout', to: 'sessions#destroy' # Route for logout
 
-  get 'price_all', to: 'stocks#price_all'
-  resources :wallets, only: [:show, :create]
+  get 'price_all', to: 'stocks#price_all' # Route for get price data from api
+  resources :wallets, only: [:show, :create] # Route for show and create wallet
   resources :transactions do
     collection do
       post 'transfer'  # Route for transferring funds
