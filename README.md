@@ -8,4 +8,7 @@ After the clone project work perfectly, run the command :
 - rake db:seed
 - rails s
 
+
+for api documentation, import my postman collection : [Wallet API ](https://github.com/ImanIsmayana/wallet_api/blob/main/Wallet%20API.postman_collection.json)
+
 happy coding 🎉🎉🎉
